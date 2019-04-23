@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: order-management
+spec:
+  selector:
+    app: order-management
+  ports:
+  - protocol: TCP
+    port: 8081
+  type: NodePort
